@@ -130,18 +130,18 @@ const invoices = [
 ];
 
 const revenue = [
-  { month: 'Jan', revenue: 2000 },
-  { month: 'Feb', revenue: 1800 },
-  { month: 'Mar', revenue: 2200 },
-  { month: 'Apr', revenue: 2500 },
-  { month: 'May', revenue: 2300 },
-  { month: 'Jun', revenue: 3200 },
-  { month: 'Jul', revenue: 3500 },
-  { month: 'Aug', revenue: 3700 },
-  { month: 'Sep', revenue: 2500 },
-  { month: 'Oct', revenue: 2800 },
-  { month: 'Nov', revenue: 3000 },
-  { month: 'Dec', revenue: 4800 },
+  { month: 'Jan', revenue: 2000, sequence: 1 },
+  { month: 'Feb', revenue: 1800, sequence: 2 },
+  { month: 'Mar', revenue: 2200, sequence: 3 },
+  { month: 'Apr', revenue: 2500, sequence: 4 },
+  { month: 'May', revenue: 2300, sequence: 5 },
+  { month: 'Jun', revenue: 3200, sequence: 6 },
+  { month: 'Jul', revenue: 3500, sequence: 7 },
+  { month: 'Aug', revenue: 3700, sequence: 8 },
+  { month: 'Sep', revenue: 2500, sequence: 9 },
+  { month: 'Oct', revenue: 2800, sequence: 10 },
+  { month: 'Nov', revenue: 3000, sequence: 11 },
+  { month: 'Dec', revenue: 4800, sequence: 12 },
 ];
 
 export { users, customers, invoices, revenue };

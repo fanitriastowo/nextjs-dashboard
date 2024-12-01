@@ -86,14 +86,15 @@ async function seedRevenue() {
      CREATE TABLE IF NOT EXISTS revenue (
        month VARCHAR(4) NOT NULL UNIQUE,
        revenue INT NOT NULL
+       sequence INT NOT NULL
      );
    `;
 
   const insertedRevenue = await Promise.all(
     revenue.map(
       (rev) => client.sql`
-         INSERT INTO revenue (month, revenue)
-         VALUES (${rev.month}, ${rev.revenue})
+         INSERT INTO revenue (month, revenue, sequence)
+         VALUES (${rev.month}, ${rev.revenue}, %{rev.sequence})
          ON CONFLICT (month) DO NOTHING;
        `,
     ),
